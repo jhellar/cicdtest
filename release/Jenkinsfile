@@ -13,8 +13,8 @@ node("android") {
 
   stage("Sign") {
     signAndroidApks (
-      keyStoreId: "myproject-testandroidcert",
-      keyAlias: "aerogear",
+      keyStoreId: "myproject-test",
+      keyAlias: "alias_name",
       apksToSign: "**/*-unsigned.apk",
       // uncomment the following line to output the signed APK to a separate directory as described above
       // signedApkMapping: [ $class: UnsignedApkBuilderDirMapping ],
